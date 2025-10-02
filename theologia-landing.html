@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheologiA - Your Church's Knowledge, Organized</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .gradient-text {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .feature-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    
+    .floating {
+      animation: float 6s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-purple-50">
+  
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center px-4 py-20">
+    <div class="max-w-6xl mx-auto text-center">
+      <div class="mb-8">
+        <h1 class="text-6xl md:text-7xl font-light text-gray-800 mb-4">
+          Theologi<span class="gradient-text font-semibold">A</span>
+        </h1>
+        <p class="text-2xl md:text-3xl text-gray-600 font-light mb-8">
+          Your Church's Knowledge, Organized
+        </p>
+      </div>
+      
+      <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+        Decades of sermons, studies, and resources scattered across files and folders. 
+        <span class="font-semibold">TheologiA brings it all together</span>, making your church's wisdom instantly searchable and accessible.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+        <button class="px-8 py-4 bg-purple-600 text-white rounded-full text-lg font-medium hover:bg-purple-700 transition-all transform hover:scale-105 shadow-lg">
+          Get Started
+        </button>
+        <button class="px-8 py-4 border-2 border-purple-600 text-purple-600 rounded-full text-lg font-medium hover:bg-purple-50 transition-all">
+          Watch Demo
+        </button>
+      </div>
+      
+      <!-- Decorative Element -->
+      <div class="relative max-w-4xl mx-auto mt-16">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 border border-gray-200 floating">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+          </div>
+          <div class="text-left space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="text-2xl">💬</span>
+              <p class="text-gray-700 italic">"Show me Pastor John's sermons on grace from the past year..."</p>
+            </div>
+            <div class="flex items-start gap-3 justify-end">
+              <div class="bg-purple-100 rounded-2xl px-6 py-4 max-w-lg">
+                <p class="text-gray-800">I found 8 sermons by Pastor John on grace. Here are the most relevant ones, with biblical references automatically tagged...</p>
+              </div>
+              <span class="text-2xl">✨</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Problem Section -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-light text-center text-gray-800 mb-16">
+        The Challenge Churches Face
+      </h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <div class="text-5xl mb-4">📚</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Buried Resources</h3>
+          <p class="text-gray-600">Years of sermons, notes, and studies lost in folders and hard drives</p>
+        </div>
+        
+        <div class="text-center p-6">
+          <div class="text-5xl mb-4">🔍</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Wasted Time</h3>
+          <p class="text-gray-600">Hours spent searching for that perfect sermon illustration or study reference</p>
+        </div>
+        
+        <div class="text-center p-6">
+          <div class="text-5xl mb-4">👥</div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Lost Context</h3>
+          <p class="text-gray-600">No way to find who taught what, when, or connect related teachings</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="py-20 px-4 bg-gradient-to-br from-purple-50 to-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-light text-center text-gray-800 mb-6">
+        Everything Your Team Needs
+      </h2>
+      <p class="text-center text-gray-600 text-lg mb-16 max-w-2xl mx-auto">
+        Built specifically for church ministry teams who want to unlock the value in their existing resources
+      </p>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Feature 1 -->
+        <div class="feature-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">📥</span>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Effortless Import</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Upload sermons, study notes, and resources in any format. Audio recordings, Word documents, PDFs, text files - we handle them all seamlessly.
+          </p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">🎯</span>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Smart Attribution</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Tag content to team members at upload. Instantly filter by pastor, teacher, or ministry leader to find exactly what you're looking for.
+          </p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">📖</span>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Biblical Intelligence</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Automatically extracts and indexes every biblical reference. Search by book, chapter, or verse to find every teaching that touches that passage.
+          </p>
+        </div>
+        
+        <!-- Feature 4 -->
+        <div class="feature-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+            <span class="text-2xl">💬</span>
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Conversational Search</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Ask questions naturally. "Show me Pastor Sarah's teachings on Romans 8" or "Find sermon illustrations about perseverance" - our AI understands.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Use Cases Section -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-light text-center text-gray-800 mb-16">
+        Built For Ministry Teams
+      </h2>
+      
+      <div class="space-y-12">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="flex-1">
+            <div class="text-4xl mb-4">👨‍🏫</div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">For Senior Pastors</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Preparing sermon series? Instantly find previous teachings on the same passages, avoid repeating illustrations, and build on past messages with confidence.
+            </p>
+          </div>
+          <div class="flex-1 bg-purple-50 rounded-2xl p-8">
+            <p class="text-gray-700 italic">"I'm preaching through Philippians next month. What have we already taught on joy and contentment?"</p>
+          </div>
+        </div>
+        
+        <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+          <div class="flex-1">
+            <div class="text-4xl mb-4">📚</div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">For Small Group Leaders</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Equip your groups with relevant teachings. Find study materials, sermon notes, and resources that align with your current topic in seconds.
+            </p>
+          </div>
+          <div class="flex-1 bg-purple-50 rounded-2xl p-8">
+            <p class="text-gray-700 italic">"Our group is studying prayer. Show me all resources on prayer from our pastoral team."</p>
+          </div>
+        </div>
+        
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="flex-1">
+            <div class="text-4xl mb-4">🎓</div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">For Ministry Staff</h3>
+            <p class="text-gray-600 leading-relaxed">
+              New team members get instant access to your church's teaching history. Seasoned staff save hours finding that perfect reference or illustration.
+            </p>
+          </div>
+          <div class="flex-1 bg-purple-50 rounded-2xl p-8">
+            <p class="text-gray-700 italic">"Find Pastor Mike's Easter sermon from 2019 where he talked about resurrection and hope."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-20 px-4 bg-gradient-to-br from-purple-600 to-purple-800 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-light mb-6">
+        Ready to Organize Your Church's Wisdom?
+      </h2>
+      <p class="text-xl mb-10 opacity-90">
+        Join forward-thinking churches who are making their resources work harder for their mission.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <button class="px-8 py-4 bg-white text-purple-600 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+          Start Free Trial
+        </button>
+        <button class="px-8 py-4 border-2 border-white text-white rounded-full text-lg font-medium hover:bg-purple-700 transition-all">
+          Schedule a Demo
+        </button>
+      </div>
+      
+      <p class="text-sm opacity-75">No credit card required • Set up in minutes • Cancel anytime</p>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="py-12 px-4 bg-gray-900 text-gray-400">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-2xl font-light text-white mb-4">TheologiA</h3>
+      <p class="mb-6">Making church resources accessible and actionable</p>
+      <div class="flex justify-center gap-8 text-sm">
+        <a href="#" class="hover:text-white transition-colors">About</a>
+        <a href="#" class="hover:text-white transition-colors">Features</a>
+        <a href="#" class="hover:text-white transition-colors">Pricing</a>
+        <a href="#" class="hover:text-white transition-colors">Contact</a>
+      </div>
+      <p class="mt-8 text-xs">© 2025 TheologiA. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
