@@ -37,7 +37,7 @@
     @keyframes chatCycle1 {
       0% {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateY(50px);
       }
       8.57% {
         opacity: 1;
@@ -56,11 +56,11 @@
     @keyframes chatCycle2 {
       0% {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateY(50px);
       }
       8.57% {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateY(50px);
       }
       17.14% {
         opacity: 1;
@@ -88,38 +88,40 @@
 <body class="bg-gradient-to-br from-gray-50 to-purple-50">
 
   <!-- Hero Section -->
-  <section class="min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-gray-50 to-purple-50">
-    <div class="max-w-6xl mx-auto text-center">
-      <div class="mb-8">
-        <h1 class="text-6xl md:text-7xl font-light text-gray-800 mb-4">
-          Theologi<span class="gradient-text font-semibold">A</span>
-        </h1>
-        <p class="text-2xl md:text-3xl text-gray-600 font-light mb-8">
-          Your Church's Knowledge, Organized
-        </p>
-      </div>
-      
-      <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-        Decades of sermons, studies, and resources scattered across files and folders. 
-        <span class="font-semibold">TheologiA brings it all together</span>, making your church's wisdom instantly searchable and accessible.
-      </p>
-      
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-        <button class="px-8 py-4 bg-purple-600 text-white rounded-full text-lg font-medium hover:bg-purple-700 transition-all transform hover:scale-105 shadow-lg">
-          Get Started
-        </button>
-        <button class="px-8 py-4 border-2 border-purple-600 text-purple-600 rounded-full text-lg font-medium hover:bg-purple-50 transition-all">
-          Watch Demo
-        </button>
-      </div>
-      
-      <!-- Chat Demo -->
-      <div class="relative max-w-2xl mx-auto mt-16 px-4 min-h-[200px]">
+  <section class="flex min-h-screen items-center px-4 py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+        <div class="text-center w-full">
+          <div class="2ax-w-6xl mx-auto">
+          <div class="mb-8">
+            <h1 class="text-6xl md:text-8xl font-light text-gray-800 mb-8">
+              Theologi<span class="gradient-text font-semibold">A</span>
+            </h1>
+            <h2 class="text-5xl md:text-6xl text-gray-600 font-extralight mb-8">
+              Your Church&apos;s Knowledge, Organized
+            </h2>
+          </div>
+          
+          <p class="text-xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Decades of sermons, studies, and resources scattered across files and folders. 
+            <span class="font-semibold"> TheologiA brings it all together</span>, making your church&apos;s wisdom instantly searchable and accessible.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <button class="px-8 py-4 bg-blue-500 text-white rounded-xl text-lg font-medium hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg">
+              Register Interest
+            </button>
+          </div>
+          </div>
+           <!-- Chat Demo -->
+       <div class="ml-40 max-w-sm mt-16 px-4 h-[50px]">
         <div id="chat-container" class="space-y-4"></div>
-      </div>
+  			</div>
+           
     </div>
+    
+				
+		
   </section>
-  
+
   <!-- Problem Section -->
   <section class="py-20 px-4 bg-white">
     <div class="max-w-5xl mx-auto">
@@ -332,14 +334,14 @@
       
       container.innerHTML = `
         <div class="flex justify-end chat-bubble-1">
-          <div class="bg-blue-200 rounded-3xl rounded-tr-md px-6 py-4 max-w-md">
-            <p class="text-gray-800 text-base leading-relaxed">${example.question}</p>
+          <div class="bg-blue-200 rounded-3xl rounded-tr-md px-6 py-4 max-w-xs">
+            <p class="text-gray-800 text-right leading-relaxed text-sm">${example.question}</p>
           </div>
         </div>
         
         <div class="flex justify-start chat-bubble-2">
-          <div class="bg-purple-200 rounded-3xl rounded-tl-md px-6 py-4 max-w-md">
-            <p class="text-gray-800 text-base leading-relaxed">${example.answer}</p>
+          <div class="bg-purple-200 rounded-3xl rounded-tl-md px-6 py-4 max-w-xs">
+            <p class="text-gray-800 text-left leading-relaxed text-sm">${example.answer}</p>
           </div>
         </div>
       `;
