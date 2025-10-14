@@ -114,11 +114,11 @@
 
   <div>
        <!-- Chat Demo -->
-       <div class="ml-40 max-w-sm mt-16 px-4 h-[50px]">
-         <svg width="109" height="84" viewBox="0 0 109 84" fill="none" xmlns="http://www.w3.org/2000/svg" class="absoloute">
-<path d="M108.89 25.1757C108.89 50.8569 58.7133 83.6757 28.8905 83.6757C-0.932343 83.6757 6.99742 61.1758 0.890273 33.1757C-4.78062 7.17578 17.2192 -3.82423 50.3905 1.17568C78.7192 7.67574 108.89 -0.505558 108.89 25.1757Z" fill="white"/>
+       <div class="ml-0 lg:ml-40 mt-0 lg:mt-16 px-4 h-[50px] w-[420px]">
+         <svg viewBox="0 0 109 84" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute ml-[25px]" width="350">
+<path d="M108.89 25.1757C108.89 50.8569 58.7133 83.6757 28.8905 83.6757C-0.932343 83.6757 6.99742 61.1758 0.890273 33.1757C-4.78062 7.17578 17.2192 -3.82423 50.3905 1.17568C78.7192 7.67574 108.89 -0.505558 108.89 25.1757Z" fill="white"></path>
          </svg>
-        <div id="chat-container" class="space-y-4"></div>
+        <div id="chat-container" class="space-y-4 pt-8"></div>
   			</div>
   </div>
 </div>
@@ -343,13 +343,13 @@
       
       container.innerHTML = `
         <div class="flex justify-end chat-bubble-1">
-          <div class="bg-blue-200 rounded-3xl rounded-tr-md px-6 py-4 max-w-xs">
+          <div class="bg-blue-200 bg-opacity-25 rounded-3xl rounded-tr-md px-6 py-4 max-w-xs">
             <p class="text-gray-800 text-right leading-relaxed text-sm">${example.question}</p>
           </div>
         </div>
         
         <div class="flex justify-start chat-bubble-2">
-          <div class="bg-purple-200 rounded-3xl rounded-tl-md px-6 py-4 max-w-xs">
+          <div class="bg-purple-200 bg-opacity-25 rounded-3xl rounded-tl-md px-6 py-4 max-w-xs">
             <p class="text-gray-800 text-left leading-relaxed text-sm">${example.answer}</p>
           </div>
         </div>
